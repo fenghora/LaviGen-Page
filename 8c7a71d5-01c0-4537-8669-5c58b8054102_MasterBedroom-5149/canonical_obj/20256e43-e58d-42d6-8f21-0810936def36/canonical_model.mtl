@@ -1,0 +1,7 @@
+# Created by Open3D 
+# object name: canonical_model
+newmtl canonical_model_0
+Ka 1.000 1.000 1.000
+Kd 1.000 1.000 1.000
+Ks 0.000 0.000 0.000
+map_Kd canonical_model_0.png

@@ -1,0 +1,1345 @@
+{
+  "subset_000000": {
+    "mask": "000000",
+    "furniture_count": 0,
+    "furniture": []
+  },
+  "subset_000001": {
+    "mask": "000001",
+    "furniture_count": 1,
+    "furniture": [
+      {
+        "index": 0,
+        "jid": "20256e43-e58d-42d6-8f21-0810936def36",
+        "class_label": "pendant_lamp"
+      }
+    ]
+  },
+  "subset_000010": {
+    "mask": "000010",
+    "furniture_count": 1,
+    "furniture": [
+      {
+        "index": 1,
+        "jid": "4f4f8527-9b6f-498b-859e-0e2574ec536d",
+        "class_label": "wardrobe"
+      }
+    ]
+  },
+  "subset_000011": {
+    "mask": "000011",
+    "furniture_count": 2,
+    "furniture": [
+      {
+        "index": 0,
+        "jid": "20256e43-e58d-42d6-8f21-0810936def36",
+        "class_label": "pendant_lamp"
+      },
+      {
+        "index": 1,
+        "jid": "4f4f8527-9b6f-498b-859e-0e2574ec536d",
+        "class_label": "wardrobe"
+      }
+    ]
+  },
+  "subset_000100": {
+    "mask": "000100",
+    "furniture_count": 1,
+    "furniture": [
+      {
+        "index": 2,
+        "jid": "602022db-9c17-43fa-97d2-111ba3438c38",
+        "class_label": "double_bed"
+      }
+    ]
+  },
+  "subset_000101": {
+    "mask": "000101",
+    "furniture_count": 2,
+    "furniture": [
+      {
+        "index": 0,
+        "jid": "20256e43-e58d-42d6-8f21-0810936def36",
+        "class_label": "pendant_lamp"
+      },
+      {
+        "index": 2,
+        "jid": "602022db-9c17-43fa-97d2-111ba3438c38",
+        "class_label": "double_bed"
+      }
+    ]
+  },
+  "subset_000110": {
+    "mask": "000110",
+    "furniture_count": 2,
+    "furniture": [
+      {
+        "index": 1,
+        "jid": "4f4f8527-9b6f-498b-859e-0e2574ec536d",
+        "class_label": "wardrobe"
+      },
+      {
+        "index": 2,
+        "jid": "602022db-9c17-43fa-97d2-111ba3438c38",
+        "class_label": "double_bed"
+      }
+    ]
+  },
+  "subset_000111": {
+    "mask": "000111",
+    "furniture_count": 3,
+    "furniture": [
+      {
+        "index": 0,
+        "jid": "20256e43-e58d-42d6-8f21-0810936def36",
+        "class_label": "pendant_lamp"
+      },
+      {
+        "index": 1,
+        "jid": "4f4f8527-9b6f-498b-859e-0e2574ec536d",
+        "class_label": "wardrobe"
+      },
+      {
+        "index": 2,
+        "jid": "602022db-9c17-43fa-97d2-111ba3438c38",
+        "class_label": "double_bed"
+      }
+    ]
+  },
+  "subset_001000": {
+    "mask": "001000",
+    "furniture_count": 1,
+    "furniture": [
+      {
+        "index": 3,
+        "jid": "71ab8f57-0cf2-4efb-83bd-6d87258622a6",
+        "class_label": "floor_lamp"
+      }
+    ]
+  },
+  "subset_001001": {
+    "mask": "001001",
+    "furniture_count": 2,
+    "furniture": [
+      {
+        "index": 0,
+        "jid": "20256e43-e58d-42d6-8f21-0810936def36",
+        "class_label": "pendant_lamp"
+      },
+      {
+        "index": 3,
+        "jid": "71ab8f57-0cf2-4efb-83bd-6d87258622a6",
+        "class_label": "floor_lamp"
+      }
+    ]
+  },
+  "subset_001010": {
+    "mask": "001010",
+    "furniture_count": 2,
+    "furniture": [
+      {
+        "index": 1,
+        "jid": "4f4f8527-9b6f-498b-859e-0e2574ec536d",
+        "class_label": "wardrobe"
+      },
+      {
+        "index": 3,
+        "jid": "71ab8f57-0cf2-4efb-83bd-6d87258622a6",
+        "class_label": "floor_lamp"
+      }
+    ]
+  },
+  "subset_001011": {
+    "mask": "001011",
+    "furniture_count": 3,
+    "furniture": [
+      {
+        "index": 0,
+        "jid": "20256e43-e58d-42d6-8f21-0810936def36",
+        "class_label": "pendant_lamp"
+      },
+      {
+        "index": 1,
+        "jid": "4f4f8527-9b6f-498b-859e-0e2574ec536d",
+        "class_label": "wardrobe"
+      },
+      {
+        "index": 3,
+        "jid": "71ab8f57-0cf2-4efb-83bd-6d87258622a6",
+        "class_label": "floor_lamp"
+      }
+    ]
+  },
+  "subset_001100": {
+    "mask": "001100",
+    "furniture_count": 2,
+    "furniture": [
+      {
+        "index": 2,
+        "jid": "602022db-9c17-43fa-97d2-111ba3438c38",
+        "class_label": "double_bed"
+      },
+      {
+        "index": 3,
+        "jid": "71ab8f57-0cf2-4efb-83bd-6d87258622a6",
+        "class_label": "floor_lamp"
+      }
+    ]
+  },
+  "subset_001101": {
+    "mask": "001101",
+    "furniture_count": 3,
+    "furniture": [
+      {
+        "index": 0,
+        "jid": "20256e43-e58d-42d6-8f21-0810936def36",
+        "class_label": "pendant_lamp"
+      },
+      {
+        "index": 2,
+        "jid": "602022db-9c17-43fa-97d2-111ba3438c38",
+        "class_label": "double_bed"
+      },
+      {
+        "index": 3,
+        "jid": "71ab8f57-0cf2-4efb-83bd-6d87258622a6",
+        "class_label": "floor_lamp"
+      }
+    ]
+  },
+  "subset_001110": {
+    "mask": "001110",
+    "furniture_count": 3,
+    "furniture": [
+      {
+        "index": 1,
+        "jid": "4f4f8527-9b6f-498b-859e-0e2574ec536d",
+        "class_label": "wardrobe"
+      },
+      {
+        "index": 2,
+        "jid": "602022db-9c17-43fa-97d2-111ba3438c38",
+        "class_label": "double_bed"
+      },
+      {
+        "index": 3,
+        "jid": "71ab8f57-0cf2-4efb-83bd-6d87258622a6",
+        "class_label": "floor_lamp"
+      }
+    ]
+  },
+  "subset_001111": {
+    "mask": "001111",
+    "furniture_count": 4,
+    "furniture": [
+      {
+        "index": 0,
+        "jid": "20256e43-e58d-42d6-8f21-0810936def36",
+        "class_label": "pendant_lamp"
+      },
+      {
+        "index": 1,
+        "jid": "4f4f8527-9b6f-498b-859e-0e2574ec536d",
+        "class_label": "wardrobe"
+      },
+      {
+        "index": 2,
+        "jid": "602022db-9c17-43fa-97d2-111ba3438c38",
+        "class_label": "double_bed"
+      },
+      {
+        "index": 3,
+        "jid": "71ab8f57-0cf2-4efb-83bd-6d87258622a6",
+        "class_label": "floor_lamp"
+      }
+    ]
+  },
+  "subset_010000": {
+    "mask": "010000",
+    "furniture_count": 1,
+    "furniture": [
+      {
+        "index": 4,
+        "jid": "50823ece-f1e0-4a8e-b7d6-312953939076",
+        "class_label": "cabinet"
+      }
+    ]
+  },
+  "subset_010001": {
+    "mask": "010001",
+    "furniture_count": 2,
+    "furniture": [
+      {
+        "index": 0,
+        "jid": "20256e43-e58d-42d6-8f21-0810936def36",
+        "class_label": "pendant_lamp"
+      },
+      {
+        "index": 4,
+        "jid": "50823ece-f1e0-4a8e-b7d6-312953939076",
+        "class_label": "cabinet"
+      }
+    ]
+  },
+  "subset_010010": {
+    "mask": "010010",
+    "furniture_count": 2,
+    "furniture": [
+      {
+        "index": 1,
+        "jid": "4f4f8527-9b6f-498b-859e-0e2574ec536d",
+        "class_label": "wardrobe"
+      },
+      {
+        "index": 4,
+        "jid": "50823ece-f1e0-4a8e-b7d6-312953939076",
+        "class_label": "cabinet"
+      }
+    ]
+  },
+  "subset_010011": {
+    "mask": "010011",
+    "furniture_count": 3,
+    "furniture": [
+      {
+        "index": 0,
+        "jid": "20256e43-e58d-42d6-8f21-0810936def36",
+        "class_label": "pendant_lamp"
+      },
+      {
+        "index": 1,
+        "jid": "4f4f8527-9b6f-498b-859e-0e2574ec536d",
+        "class_label": "wardrobe"
+      },
+      {
+        "index": 4,
+        "jid": "50823ece-f1e0-4a8e-b7d6-312953939076",
+        "class_label": "cabinet"
+      }
+    ]
+  },
+  "subset_010100": {
+    "mask": "010100",
+    "furniture_count": 2,
+    "furniture": [
+      {
+        "index": 2,
+        "jid": "602022db-9c17-43fa-97d2-111ba3438c38",
+        "class_label": "double_bed"
+      },
+      {
+        "index": 4,
+        "jid": "50823ece-f1e0-4a8e-b7d6-312953939076",
+        "class_label": "cabinet"
+      }
+    ]
+  },
+  "subset_010101": {
+    "mask": "010101",
+    "furniture_count": 3,
+    "furniture": [
+      {
+        "index": 0,
+        "jid": "20256e43-e58d-42d6-8f21-0810936def36",
+        "class_label": "pendant_lamp"
+      },
+      {
+        "index": 2,
+        "jid": "602022db-9c17-43fa-97d2-111ba3438c38",
+        "class_label": "double_bed"
+      },
+      {
+        "index": 4,
+        "jid": "50823ece-f1e0-4a8e-b7d6-312953939076",
+        "class_label": "cabinet"
+      }
+    ]
+  },
+  "subset_010110": {
+    "mask": "010110",
+    "furniture_count": 3,
+    "furniture": [
+      {
+        "index": 1,
+        "jid": "4f4f8527-9b6f-498b-859e-0e2574ec536d",
+        "class_label": "wardrobe"
+      },
+      {
+        "index": 2,
+        "jid": "602022db-9c17-43fa-97d2-111ba3438c38",
+        "class_label": "double_bed"
+      },
+      {
+        "index": 4,
+        "jid": "50823ece-f1e0-4a8e-b7d6-312953939076",
+        "class_label": "cabinet"
+      }
+    ]
+  },
+  "subset_010111": {
+    "mask": "010111",
+    "furniture_count": 4,
+    "furniture": [
+      {
+        "index": 0,
+        "jid": "20256e43-e58d-42d6-8f21-0810936def36",
+        "class_label": "pendant_lamp"
+      },
+      {
+        "index": 1,
+        "jid": "4f4f8527-9b6f-498b-859e-0e2574ec536d",
+        "class_label": "wardrobe"
+      },
+      {
+        "index": 2,
+        "jid": "602022db-9c17-43fa-97d2-111ba3438c38",
+        "class_label": "double_bed"
+      },
+      {
+        "index": 4,
+        "jid": "50823ece-f1e0-4a8e-b7d6-312953939076",
+        "class_label": "cabinet"
+      }
+    ]
+  },
+  "subset_011000": {
+    "mask": "011000",
+    "furniture_count": 2,
+    "furniture": [
+      {
+        "index": 3,
+        "jid": "71ab8f57-0cf2-4efb-83bd-6d87258622a6",
+        "class_label": "floor_lamp"
+      },
+      {
+        "index": 4,
+        "jid": "50823ece-f1e0-4a8e-b7d6-312953939076",
+        "class_label": "cabinet"
+      }
+    ]
+  },
+  "subset_011001": {
+    "mask": "011001",
+    "furniture_count": 3,
+    "furniture": [
+      {
+        "index": 0,
+        "jid": "20256e43-e58d-42d6-8f21-0810936def36",
+        "class_label": "pendant_lamp"
+      },
+      {
+        "index": 3,
+        "jid": "71ab8f57-0cf2-4efb-83bd-6d87258622a6",
+        "class_label": "floor_lamp"
+      },
+      {
+        "index": 4,
+        "jid": "50823ece-f1e0-4a8e-b7d6-312953939076",
+        "class_label": "cabinet"
+      }
+    ]
+  },
+  "subset_011010": {
+    "mask": "011010",
+    "furniture_count": 3,
+    "furniture": [
+      {
+        "index": 1,
+        "jid": "4f4f8527-9b6f-498b-859e-0e2574ec536d",
+        "class_label": "wardrobe"
+      },
+      {
+        "index": 3,
+        "jid": "71ab8f57-0cf2-4efb-83bd-6d87258622a6",
+        "class_label": "floor_lamp"
+      },
+      {
+        "index": 4,
+        "jid": "50823ece-f1e0-4a8e-b7d6-312953939076",
+        "class_label": "cabinet"
+      }
+    ]
+  },
+  "subset_011011": {
+    "mask": "011011",
+    "furniture_count": 4,
+    "furniture": [
+      {
+        "index": 0,
+        "jid": "20256e43-e58d-42d6-8f21-0810936def36",
+        "class_label": "pendant_lamp"
+      },
+      {
+        "index": 1,
+        "jid": "4f4f8527-9b6f-498b-859e-0e2574ec536d",
+        "class_label": "wardrobe"
+      },
+      {
+        "index": 3,
+        "jid": "71ab8f57-0cf2-4efb-83bd-6d87258622a6",
+        "class_label": "floor_lamp"
+      },
+      {
+        "index": 4,
+        "jid": "50823ece-f1e0-4a8e-b7d6-312953939076",
+        "class_label": "cabinet"
+      }
+    ]
+  },
+  "subset_011100": {
+    "mask": "011100",
+    "furniture_count": 3,
+    "furniture": [
+      {
+        "index": 2,
+        "jid": "602022db-9c17-43fa-97d2-111ba3438c38",
+        "class_label": "double_bed"
+      },
+      {
+        "index": 3,
+        "jid": "71ab8f57-0cf2-4efb-83bd-6d87258622a6",
+        "class_label": "floor_lamp"
+      },
+      {
+        "index": 4,
+        "jid": "50823ece-f1e0-4a8e-b7d6-312953939076",
+        "class_label": "cabinet"
+      }
+    ]
+  },
+  "subset_011101": {
+    "mask": "011101",
+    "furniture_count": 4,
+    "furniture": [
+      {
+        "index": 0,
+        "jid": "20256e43-e58d-42d6-8f21-0810936def36",
+        "class_label": "pendant_lamp"
+      },
+      {
+        "index": 2,
+        "jid": "602022db-9c17-43fa-97d2-111ba3438c38",
+        "class_label": "double_bed"
+      },
+      {
+        "index": 3,
+        "jid": "71ab8f57-0cf2-4efb-83bd-6d87258622a6",
+        "class_label": "floor_lamp"
+      },
+      {
+        "index": 4,
+        "jid": "50823ece-f1e0-4a8e-b7d6-312953939076",
+        "class_label": "cabinet"
+      }
+    ]
+  },
+  "subset_011110": {
+    "mask": "011110",
+    "furniture_count": 4,
+    "furniture": [
+      {
+        "index": 1,
+        "jid": "4f4f8527-9b6f-498b-859e-0e2574ec536d",
+        "class_label": "wardrobe"
+      },
+      {
+        "index": 2,
+        "jid": "602022db-9c17-43fa-97d2-111ba3438c38",
+        "class_label": "double_bed"
+      },
+      {
+        "index": 3,
+        "jid": "71ab8f57-0cf2-4efb-83bd-6d87258622a6",
+        "class_label": "floor_lamp"
+      },
+      {
+        "index": 4,
+        "jid": "50823ece-f1e0-4a8e-b7d6-312953939076",
+        "class_label": "cabinet"
+      }
+    ]
+  },
+  "subset_011111": {
+    "mask": "011111",
+    "furniture_count": 5,
+    "furniture": [
+      {
+        "index": 0,
+        "jid": "20256e43-e58d-42d6-8f21-0810936def36",
+        "class_label": "pendant_lamp"
+      },
+      {
+        "index": 1,
+        "jid": "4f4f8527-9b6f-498b-859e-0e2574ec536d",
+        "class_label": "wardrobe"
+      },
+      {
+        "index": 2,
+        "jid": "602022db-9c17-43fa-97d2-111ba3438c38",
+        "class_label": "double_bed"
+      },
+      {
+        "index": 3,
+        "jid": "71ab8f57-0cf2-4efb-83bd-6d87258622a6",
+        "class_label": "floor_lamp"
+      },
+      {
+        "index": 4,
+        "jid": "50823ece-f1e0-4a8e-b7d6-312953939076",
+        "class_label": "cabinet"
+      }
+    ]
+  },
+  "subset_100000": {
+    "mask": "100000",
+    "furniture_count": 1,
+    "furniture": [
+      {
+        "index": 5,
+        "jid": "2367712e-695d-4b3a-bc44-a2711b48c3dd",
+        "class_label": "tv_stand"
+      }
+    ]
+  },
+  "subset_100001": {
+    "mask": "100001",
+    "furniture_count": 2,
+    "furniture": [
+      {
+        "index": 0,
+        "jid": "20256e43-e58d-42d6-8f21-0810936def36",
+        "class_label": "pendant_lamp"
+      },
+      {
+        "index": 5,
+        "jid": "2367712e-695d-4b3a-bc44-a2711b48c3dd",
+        "class_label": "tv_stand"
+      }
+    ]
+  },
+  "subset_100010": {
+    "mask": "100010",
+    "furniture_count": 2,
+    "furniture": [
+      {
+        "index": 1,
+        "jid": "4f4f8527-9b6f-498b-859e-0e2574ec536d",
+        "class_label": "wardrobe"
+      },
+      {
+        "index": 5,
+        "jid": "2367712e-695d-4b3a-bc44-a2711b48c3dd",
+        "class_label": "tv_stand"
+      }
+    ]
+  },
+  "subset_100011": {
+    "mask": "100011",
+    "furniture_count": 3,
+    "furniture": [
+      {
+        "index": 0,
+        "jid": "20256e43-e58d-42d6-8f21-0810936def36",
+        "class_label": "pendant_lamp"
+      },
+      {
+        "index": 1,
+        "jid": "4f4f8527-9b6f-498b-859e-0e2574ec536d",
+        "class_label": "wardrobe"
+      },
+      {
+        "index": 5,
+        "jid": "2367712e-695d-4b3a-bc44-a2711b48c3dd",
+        "class_label": "tv_stand"
+      }
+    ]
+  },
+  "subset_100100": {
+    "mask": "100100",
+    "furniture_count": 2,
+    "furniture": [
+      {
+        "index": 2,
+        "jid": "602022db-9c17-43fa-97d2-111ba3438c38",
+        "class_label": "double_bed"
+      },
+      {
+        "index": 5,
+        "jid": "2367712e-695d-4b3a-bc44-a2711b48c3dd",
+        "class_label": "tv_stand"
+      }
+    ]
+  },
+  "subset_100101": {
+    "mask": "100101",
+    "furniture_count": 3,
+    "furniture": [
+      {
+        "index": 0,
+        "jid": "20256e43-e58d-42d6-8f21-0810936def36",
+        "class_label": "pendant_lamp"
+      },
+      {
+        "index": 2,
+        "jid": "602022db-9c17-43fa-97d2-111ba3438c38",
+        "class_label": "double_bed"
+      },
+      {
+        "index": 5,
+        "jid": "2367712e-695d-4b3a-bc44-a2711b48c3dd",
+        "class_label": "tv_stand"
+      }
+    ]
+  },
+  "subset_100110": {
+    "mask": "100110",
+    "furniture_count": 3,
+    "furniture": [
+      {
+        "index": 1,
+        "jid": "4f4f8527-9b6f-498b-859e-0e2574ec536d",
+        "class_label": "wardrobe"
+      },
+      {
+        "index": 2,
+        "jid": "602022db-9c17-43fa-97d2-111ba3438c38",
+        "class_label": "double_bed"
+      },
+      {
+        "index": 5,
+        "jid": "2367712e-695d-4b3a-bc44-a2711b48c3dd",
+        "class_label": "tv_stand"
+      }
+    ]
+  },
+  "subset_100111": {
+    "mask": "100111",
+    "furniture_count": 4,
+    "furniture": [
+      {
+        "index": 0,
+        "jid": "20256e43-e58d-42d6-8f21-0810936def36",
+        "class_label": "pendant_lamp"
+      },
+      {
+        "index": 1,
+        "jid": "4f4f8527-9b6f-498b-859e-0e2574ec536d",
+        "class_label": "wardrobe"
+      },
+      {
+        "index": 2,
+        "jid": "602022db-9c17-43fa-97d2-111ba3438c38",
+        "class_label": "double_bed"
+      },
+      {
+        "index": 5,
+        "jid": "2367712e-695d-4b3a-bc44-a2711b48c3dd",
+        "class_label": "tv_stand"
+      }
+    ]
+  },
+  "subset_101000": {
+    "mask": "101000",
+    "furniture_count": 2,
+    "furniture": [
+      {
+        "index": 3,
+        "jid": "71ab8f57-0cf2-4efb-83bd-6d87258622a6",
+        "class_label": "floor_lamp"
+      },
+      {
+        "index": 5,
+        "jid": "2367712e-695d-4b3a-bc44-a2711b48c3dd",
+        "class_label": "tv_stand"
+      }
+    ]
+  },
+  "subset_101001": {
+    "mask": "101001",
+    "furniture_count": 3,
+    "furniture": [
+      {
+        "index": 0,
+        "jid": "20256e43-e58d-42d6-8f21-0810936def36",
+        "class_label": "pendant_lamp"
+      },
+      {
+        "index": 3,
+        "jid": "71ab8f57-0cf2-4efb-83bd-6d87258622a6",
+        "class_label": "floor_lamp"
+      },
+      {
+        "index": 5,
+        "jid": "2367712e-695d-4b3a-bc44-a2711b48c3dd",
+        "class_label": "tv_stand"
+      }
+    ]
+  },
+  "subset_101010": {
+    "mask": "101010",
+    "furniture_count": 3,
+    "furniture": [
+      {
+        "index": 1,
+        "jid": "4f4f8527-9b6f-498b-859e-0e2574ec536d",
+        "class_label": "wardrobe"
+      },
+      {
+        "index": 3,
+        "jid": "71ab8f57-0cf2-4efb-83bd-6d87258622a6",
+        "class_label": "floor_lamp"
+      },
+      {
+        "index": 5,
+        "jid": "2367712e-695d-4b3a-bc44-a2711b48c3dd",
+        "class_label": "tv_stand"
+      }
+    ]
+  },
+  "subset_101011": {
+    "mask": "101011",
+    "furniture_count": 4,
+    "furniture": [
+      {
+        "index": 0,
+        "jid": "20256e43-e58d-42d6-8f21-0810936def36",
+        "class_label": "pendant_lamp"
+      },
+      {
+        "index": 1,
+        "jid": "4f4f8527-9b6f-498b-859e-0e2574ec536d",
+        "class_label": "wardrobe"
+      },
+      {
+        "index": 3,
+        "jid": "71ab8f57-0cf2-4efb-83bd-6d87258622a6",
+        "class_label": "floor_lamp"
+      },
+      {
+        "index": 5,
+        "jid": "2367712e-695d-4b3a-bc44-a2711b48c3dd",
+        "class_label": "tv_stand"
+      }
+    ]
+  },
+  "subset_101100": {
+    "mask": "101100",
+    "furniture_count": 3,
+    "furniture": [
+      {
+        "index": 2,
+        "jid": "602022db-9c17-43fa-97d2-111ba3438c38",
+        "class_label": "double_bed"
+      },
+      {
+        "index": 3,
+        "jid": "71ab8f57-0cf2-4efb-83bd-6d87258622a6",
+        "class_label": "floor_lamp"
+      },
+      {
+        "index": 5,
+        "jid": "2367712e-695d-4b3a-bc44-a2711b48c3dd",
+        "class_label": "tv_stand"
+      }
+    ]
+  },
+  "subset_101101": {
+    "mask": "101101",
+    "furniture_count": 4,
+    "furniture": [
+      {
+        "index": 0,
+        "jid": "20256e43-e58d-42d6-8f21-0810936def36",
+        "class_label": "pendant_lamp"
+      },
+      {
+        "index": 2,
+        "jid": "602022db-9c17-43fa-97d2-111ba3438c38",
+        "class_label": "double_bed"
+      },
+      {
+        "index": 3,
+        "jid": "71ab8f57-0cf2-4efb-83bd-6d87258622a6",
+        "class_label": "floor_lamp"
+      },
+      {
+        "index": 5,
+        "jid": "2367712e-695d-4b3a-bc44-a2711b48c3dd",
+        "class_label": "tv_stand"
+      }
+    ]
+  },
+  "subset_101110": {
+    "mask": "101110",
+    "furniture_count": 4,
+    "furniture": [
+      {
+        "index": 1,
+        "jid": "4f4f8527-9b6f-498b-859e-0e2574ec536d",
+        "class_label": "wardrobe"
+      },
+      {
+        "index": 2,
+        "jid": "602022db-9c17-43fa-97d2-111ba3438c38",
+        "class_label": "double_bed"
+      },
+      {
+        "index": 3,
+        "jid": "71ab8f57-0cf2-4efb-83bd-6d87258622a6",
+        "class_label": "floor_lamp"
+      },
+      {
+        "index": 5,
+        "jid": "2367712e-695d-4b3a-bc44-a2711b48c3dd",
+        "class_label": "tv_stand"
+      }
+    ]
+  },
+  "subset_101111": {
+    "mask": "101111",
+    "furniture_count": 5,
+    "furniture": [
+      {
+        "index": 0,
+        "jid": "20256e43-e58d-42d6-8f21-0810936def36",
+        "class_label": "pendant_lamp"
+      },
+      {
+        "index": 1,
+        "jid": "4f4f8527-9b6f-498b-859e-0e2574ec536d",
+        "class_label": "wardrobe"
+      },
+      {
+        "index": 2,
+        "jid": "602022db-9c17-43fa-97d2-111ba3438c38",
+        "class_label": "double_bed"
+      },
+      {
+        "index": 3,
+        "jid": "71ab8f57-0cf2-4efb-83bd-6d87258622a6",
+        "class_label": "floor_lamp"
+      },
+      {
+        "index": 5,
+        "jid": "2367712e-695d-4b3a-bc44-a2711b48c3dd",
+        "class_label": "tv_stand"
+      }
+    ]
+  },
+  "subset_110000": {
+    "mask": "110000",
+    "furniture_count": 2,
+    "furniture": [
+      {
+        "index": 4,
+        "jid": "50823ece-f1e0-4a8e-b7d6-312953939076",
+        "class_label": "cabinet"
+      },
+      {
+        "index": 5,
+        "jid": "2367712e-695d-4b3a-bc44-a2711b48c3dd",
+        "class_label": "tv_stand"
+      }
+    ]
+  },
+  "subset_110001": {
+    "mask": "110001",
+    "furniture_count": 3,
+    "furniture": [
+      {
+        "index": 0,
+        "jid": "20256e43-e58d-42d6-8f21-0810936def36",
+        "class_label": "pendant_lamp"
+      },
+      {
+        "index": 4,
+        "jid": "50823ece-f1e0-4a8e-b7d6-312953939076",
+        "class_label": "cabinet"
+      },
+      {
+        "index": 5,
+        "jid": "2367712e-695d-4b3a-bc44-a2711b48c3dd",
+        "class_label": "tv_stand"
+      }
+    ]
+  },
+  "subset_110010": {
+    "mask": "110010",
+    "furniture_count": 3,
+    "furniture": [
+      {
+        "index": 1,
+        "jid": "4f4f8527-9b6f-498b-859e-0e2574ec536d",
+        "class_label": "wardrobe"
+      },
+      {
+        "index": 4,
+        "jid": "50823ece-f1e0-4a8e-b7d6-312953939076",
+        "class_label": "cabinet"
+      },
+      {
+        "index": 5,
+        "jid": "2367712e-695d-4b3a-bc44-a2711b48c3dd",
+        "class_label": "tv_stand"
+      }
+    ]
+  },
+  "subset_110011": {
+    "mask": "110011",
+    "furniture_count": 4,
+    "furniture": [
+      {
+        "index": 0,
+        "jid": "20256e43-e58d-42d6-8f21-0810936def36",
+        "class_label": "pendant_lamp"
+      },
+      {
+        "index": 1,
+        "jid": "4f4f8527-9b6f-498b-859e-0e2574ec536d",
+        "class_label": "wardrobe"
+      },
+      {
+        "index": 4,
+        "jid": "50823ece-f1e0-4a8e-b7d6-312953939076",
+        "class_label": "cabinet"
+      },
+      {
+        "index": 5,
+        "jid": "2367712e-695d-4b3a-bc44-a2711b48c3dd",
+        "class_label": "tv_stand"
+      }
+    ]
+  },
+  "subset_110100": {
+    "mask": "110100",
+    "furniture_count": 3,
+    "furniture": [
+      {
+        "index": 2,
+        "jid": "602022db-9c17-43fa-97d2-111ba3438c38",
+        "class_label": "double_bed"
+      },
+      {
+        "index": 4,
+        "jid": "50823ece-f1e0-4a8e-b7d6-312953939076",
+        "class_label": "cabinet"
+      },
+      {
+        "index": 5,
+        "jid": "2367712e-695d-4b3a-bc44-a2711b48c3dd",
+        "class_label": "tv_stand"
+      }
+    ]
+  },
+  "subset_110101": {
+    "mask": "110101",
+    "furniture_count": 4,
+    "furniture": [
+      {
+        "index": 0,
+        "jid": "20256e43-e58d-42d6-8f21-0810936def36",
+        "class_label": "pendant_lamp"
+      },
+      {
+        "index": 2,
+        "jid": "602022db-9c17-43fa-97d2-111ba3438c38",
+        "class_label": "double_bed"
+      },
+      {
+        "index": 4,
+        "jid": "50823ece-f1e0-4a8e-b7d6-312953939076",
+        "class_label": "cabinet"
+      },
+      {
+        "index": 5,
+        "jid": "2367712e-695d-4b3a-bc44-a2711b48c3dd",
+        "class_label": "tv_stand"
+      }
+    ]
+  },
+  "subset_110110": {
+    "mask": "110110",
+    "furniture_count": 4,
+    "furniture": [
+      {
+        "index": 1,
+        "jid": "4f4f8527-9b6f-498b-859e-0e2574ec536d",
+        "class_label": "wardrobe"
+      },
+      {
+        "index": 2,
+        "jid": "602022db-9c17-43fa-97d2-111ba3438c38",
+        "class_label": "double_bed"
+      },
+      {
+        "index": 4,
+        "jid": "50823ece-f1e0-4a8e-b7d6-312953939076",
+        "class_label": "cabinet"
+      },
+      {
+        "index": 5,
+        "jid": "2367712e-695d-4b3a-bc44-a2711b48c3dd",
+        "class_label": "tv_stand"
+      }
+    ]
+  },
+  "subset_110111": {
+    "mask": "110111",
+    "furniture_count": 5,
+    "furniture": [
+      {
+        "index": 0,
+        "jid": "20256e43-e58d-42d6-8f21-0810936def36",
+        "class_label": "pendant_lamp"
+      },
+      {
+        "index": 1,
+        "jid": "4f4f8527-9b6f-498b-859e-0e2574ec536d",
+        "class_label": "wardrobe"
+      },
+      {
+        "index": 2,
+        "jid": "602022db-9c17-43fa-97d2-111ba3438c38",
+        "class_label": "double_bed"
+      },
+      {
+        "index": 4,
+        "jid": "50823ece-f1e0-4a8e-b7d6-312953939076",
+        "class_label": "cabinet"
+      },
+      {
+        "index": 5,
+        "jid": "2367712e-695d-4b3a-bc44-a2711b48c3dd",
+        "class_label": "tv_stand"
+      }
+    ]
+  },
+  "subset_111000": {
+    "mask": "111000",
+    "furniture_count": 3,
+    "furniture": [
+      {
+        "index": 3,
+        "jid": "71ab8f57-0cf2-4efb-83bd-6d87258622a6",
+        "class_label": "floor_lamp"
+      },
+      {
+        "index": 4,
+        "jid": "50823ece-f1e0-4a8e-b7d6-312953939076",
+        "class_label": "cabinet"
+      },
+      {
+        "index": 5,
+        "jid": "2367712e-695d-4b3a-bc44-a2711b48c3dd",
+        "class_label": "tv_stand"
+      }
+    ]
+  },
+  "subset_111001": {
+    "mask": "111001",
+    "furniture_count": 4,
+    "furniture": [
+      {
+        "index": 0,
+        "jid": "20256e43-e58d-42d6-8f21-0810936def36",
+        "class_label": "pendant_lamp"
+      },
+      {
+        "index": 3,
+        "jid": "71ab8f57-0cf2-4efb-83bd-6d87258622a6",
+        "class_label": "floor_lamp"
+      },
+      {
+        "index": 4,
+        "jid": "50823ece-f1e0-4a8e-b7d6-312953939076",
+        "class_label": "cabinet"
+      },
+      {
+        "index": 5,
+        "jid": "2367712e-695d-4b3a-bc44-a2711b48c3dd",
+        "class_label": "tv_stand"
+      }
+    ]
+  },
+  "subset_111010": {
+    "mask": "111010",
+    "furniture_count": 4,
+    "furniture": [
+      {
+        "index": 1,
+        "jid": "4f4f8527-9b6f-498b-859e-0e2574ec536d",
+        "class_label": "wardrobe"
+      },
+      {
+        "index": 3,
+        "jid": "71ab8f57-0cf2-4efb-83bd-6d87258622a6",
+        "class_label": "floor_lamp"
+      },
+      {
+        "index": 4,
+        "jid": "50823ece-f1e0-4a8e-b7d6-312953939076",
+        "class_label": "cabinet"
+      },
+      {
+        "index": 5,
+        "jid": "2367712e-695d-4b3a-bc44-a2711b48c3dd",
+        "class_label": "tv_stand"
+      }
+    ]
+  },
+  "subset_111011": {
+    "mask": "111011",
+    "furniture_count": 5,
+    "furniture": [
+      {
+        "index": 0,
+        "jid": "20256e43-e58d-42d6-8f21-0810936def36",
+        "class_label": "pendant_lamp"
+      },
+      {
+        "index": 1,
+        "jid": "4f4f8527-9b6f-498b-859e-0e2574ec536d",
+        "class_label": "wardrobe"
+      },
+      {
+        "index": 3,
+        "jid": "71ab8f57-0cf2-4efb-83bd-6d87258622a6",
+        "class_label": "floor_lamp"
+      },
+      {
+        "index": 4,
+        "jid": "50823ece-f1e0-4a8e-b7d6-312953939076",
+        "class_label": "cabinet"
+      },
+      {
+        "index": 5,
+        "jid": "2367712e-695d-4b3a-bc44-a2711b48c3dd",
+        "class_label": "tv_stand"
+      }
+    ]
+  },
+  "subset_111100": {
+    "mask": "111100",
+    "furniture_count": 4,
+    "furniture": [
+      {
+        "index": 2,
+        "jid": "602022db-9c17-43fa-97d2-111ba3438c38",
+        "class_label": "double_bed"
+      },
+      {
+        "index": 3,
+        "jid": "71ab8f57-0cf2-4efb-83bd-6d87258622a6",
+        "class_label": "floor_lamp"
+      },
+      {
+        "index": 4,
+        "jid": "50823ece-f1e0-4a8e-b7d6-312953939076",
+        "class_label": "cabinet"
+      },
+      {
+        "index": 5,
+        "jid": "2367712e-695d-4b3a-bc44-a2711b48c3dd",
+        "class_label": "tv_stand"
+      }
+    ]
+  },
+  "subset_111101": {
+    "mask": "111101",
+    "furniture_count": 5,
+    "furniture": [
+      {
+        "index": 0,
+        "jid": "20256e43-e58d-42d6-8f21-0810936def36",
+        "class_label": "pendant_lamp"
+      },
+      {
+        "index": 2,
+        "jid": "602022db-9c17-43fa-97d2-111ba3438c38",
+        "class_label": "double_bed"
+      },
+      {
+        "index": 3,
+        "jid": "71ab8f57-0cf2-4efb-83bd-6d87258622a6",
+        "class_label": "floor_lamp"
+      },
+      {
+        "index": 4,
+        "jid": "50823ece-f1e0-4a8e-b7d6-312953939076",
+        "class_label": "cabinet"
+      },
+      {
+        "index": 5,
+        "jid": "2367712e-695d-4b3a-bc44-a2711b48c3dd",
+        "class_label": "tv_stand"
+      }
+    ]
+  },
+  "subset_111110": {
+    "mask": "111110",
+    "furniture_count": 5,
+    "furniture": [
+      {
+        "index": 1,
+        "jid": "4f4f8527-9b6f-498b-859e-0e2574ec536d",
+        "class_label": "wardrobe"
+      },
+      {
+        "index": 2,
+        "jid": "602022db-9c17-43fa-97d2-111ba3438c38",
+        "class_label": "double_bed"
+      },
+      {
+        "index": 3,
+        "jid": "71ab8f57-0cf2-4efb-83bd-6d87258622a6",
+        "class_label": "floor_lamp"
+      },
+      {
+        "index": 4,
+        "jid": "50823ece-f1e0-4a8e-b7d6-312953939076",
+        "class_label": "cabinet"
+      },
+      {
+        "index": 5,
+        "jid": "2367712e-695d-4b3a-bc44-a2711b48c3dd",
+        "class_label": "tv_stand"
+      }
+    ]
+  },
+  "subset_111111": {
+    "mask": "111111",
+    "furniture_count": 6,
+    "furniture": [
+      {
+        "index": 0,
+        "jid": "20256e43-e58d-42d6-8f21-0810936def36",
+        "class_label": "pendant_lamp"
+      },
+      {
+        "index": 1,
+        "jid": "4f4f8527-9b6f-498b-859e-0e2574ec536d",
+        "class_label": "wardrobe"
+      },
+      {
+        "index": 2,
+        "jid": "602022db-9c17-43fa-97d2-111ba3438c38",
+        "class_label": "double_bed"
+      },
+      {
+        "index": 3,
+        "jid": "71ab8f57-0cf2-4efb-83bd-6d87258622a6",
+        "class_label": "floor_lamp"
+      },
+      {
+        "index": 4,
+        "jid": "50823ece-f1e0-4a8e-b7d6-312953939076",
+        "class_label": "cabinet"
+      },
+      {
+        "index": 5,
+        "jid": "2367712e-695d-4b3a-bc44-a2711b48c3dd",
+        "class_label": "tv_stand"
+      }
+    ]
+  }
+}

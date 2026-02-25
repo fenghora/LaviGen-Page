@@ -1,0 +1,443 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LaviGen: Repurposing 3D Generative Model for Autoregressive Layout Generation</title>
+        <!-- <link rel="icon" href="favicon.png"> -->
+        <link rel="icon" href="icon.png">
+        <link rel="stylesheet" href="fonts/avenir-next/stylesheet.css">
+        <link rel="stylesheet" href="fonts/segoe-print/stylesheet.css">
+        <link rel="stylesheet" href="icons/style.css">
+        <link rel="stylesheet" href="css/window.css?v=7">
+        <link rel="stylesheet" href="css/carousel.css?v=2">
+        <link rel="stylesheet" href="css/selection_panel.css?v=2">
+        <link rel="stylesheet" href="css/main.css?v=7">
+        <script src="js/window.js?v=2"></script>
+        <script src="js/carousel.js?v=2"></script>
+        <script src="js/selection_panel.js?v=2"></script>
+        <script src="js/generation.js?v=2"></script>
+        <script src="js/editing.js?v=2"></script>
+        <script src="js/application.js?v=2"></script>
+        <script src="js/scene3d.js?v=7"></script>
+        <script src="js/autoregressive.js?v=7"></script>
+		<script src="js/main.js?v=7"></script>
+
+        <!-- Three.js import map (must precede all type="module" scripts) -->
+        <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+            }
+        }
+        </script>
+        <script type="module" src="js/scene3d_viewer.js?v=7"></script>
+        <script type="module" src="js/autoregressive_viewer.js?v=7"></script>
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <!-- <div id="logo">
+                <video autoplay playsinline loop muted src="assets/logo.mp4" poster="assets/logo.jpg"></video>*
+            </div> -->
+                <div id="title" class="x-gradient-font">
+                    <span style="font-size: 52px;">LaviGen: Repurposing 3D Generative Model for Autoregressive Layout Generation</span>
+                </div>
+                <div id="authors">
+                    <div><a class="link">Haoran Feng</a><sup>1*</sup></div>
+                    <div><a class="link">Yifan Niu</a><sup>2*</sup></div>
+                    <div><a class="link">Zehuan Huang</a><sup>2✉</sup></div>
+                    <div><a class="link">Yang-Tian Sun</a><sup>3</sup></div>
+                    <div class="break"></div>
+                    <div><a class="link">Chunchao Guo</a><sup>4</sup></div>
+                    <div><a class="link">Yuxin Peng</a><sup>5</sup></div>
+                    <div><a class="link">Lu Sheng</a><sup>2✉</sup></div>
+                </div>
+                <div id="institution">
+                    <div><sup>1</sup><a class="link" href="https://www.tsinghua.edu.cn/">Tsinghua University</a></div>
+                    <div><sup>2</sup><a class="link" href="https://www.buaa.edu.cn/">Beihang University</a></div>
+                    <div><sup>3</sup><a class="link" href="https://www.hku.hk/">University of Hong Kong</a></div>
+                    <div><sup>4</sup><a class="link" href="https://www.tencent.com/zh-cn/">Tencent-Hunyuan</a></div>
+                    <div><sup>5</sup><a class="link" href="https://www.pku.edu.cn/">Peking University</a></div>
+                </div>
+                <div id="institution">
+                    <div><sup>*</sup>Equal Contribution</div>
+                    <!-- <div><sup>†</sup>Project Lead</div> -->
+                    <div><sup>✉</sup>Corresponding Author</div>
+                </div>
+                <!-- <div class="x-center-text" style="font-size: 20px; font-weight: 700; color: #5f5f5f;">
+                    CVPR 2025 Highlight
+                </div> -->
+                <div id="links">
+                    <div><a id="paper" href="">Paper</a></div>
+                    <div><a id="arxiv" href="">Arxiv</a></div>
+                    <div><a id="code" href="https://github.com/fenghora/LaviGen">Code</a></div>
+                    <!-- <div><a id="demo" href="https://huggingface.co/spaces/Insta360-Research/DiT360">Demo</a></div>
+					<div><a id="demo" href="https://huggingface.co/datasets/Insta360-Research/Matterport3D_polished">Dataset</a></div> -->
+                </div>
+            <!-- <div class="x-center-text" style="font-size: 18px; font-weight: 600; color: #7a0e0e;"><i>
+                (Note: This is the only official webpage for the TRELLIS project)
+            </i></div> -->
+            <div id="teaser">
+                <!-- <div style="width: 100%;"><video autoplay playsinline loop muted src="assets/teaser.mp4" poster="assets/teaser.jpg"></video></div> -->
+                <img src="assets/teaser.png" alt="teaser" style="width: 100%">
+            </div>
+            <div class="x-center-text" style="font-size: 18px; font-weight: 500; color: #3f3f3f;">
+                <b>TL;DR:</b> 
+                We introduce <i><b>LaviGen</b></i>, a framework that repurposes <i><b>3D generative models</b></i> for <i><b>autoregressive 3D layout generation</b></i>, 
+                achieving <i><b>19% higher physical plausibility</b></i> and <i><b>65% faster</b></i> computation than the state of the art.
+            </div>
+            <div id="abstract" class="x-gradient-block">
+                We introduce <span style="font-size: 16px; font-weight: 600;"><i>LaviGen</i></span>, a framework that repurposes 3D generative models for 3D layout generation.
+                Unlike previous methods that infer object layouts from textual descriptions, <span style="font-size: 16px; font-weight: 600;"><i>LaviGen</i></span> operates directly in the native 3D space, formulating layout generation as an autoregressive process that explicitly models geometric relations and physical constraints among objects, producing coherent and physically plausible 3D scenes.
+                To further enhance this process, we propose an adapted 3D diffusion model to integrate scene, object, and instruction information, and employ a <span style="font-size: 16px; font-weight: 600;">dual-guidance self-rollout distillation</span> mechanism to improve efficiency and spatial accuracy.
+                Extensive experiments on the LayoutVLM benchmark show <span style="font-size: 16px; font-weight: 600;"><i>LaviGen</i></span> achieves superior 3D layout generation performance, with <span style="font-size: 16px; font-weight: 600;">19% higher physical plausibility</span> than the state of the art and <span style="font-size: 16px; font-weight: 600;">65% faster</span> computation.
+                We will release our code publicly.
+            </div>
+            <!-- <p class="x-note">
+                <i>* Generated by</i> <span style="font-size: 16px; font-weight: 600;">T</span><span style="font-size: 12px; font-weight: 700;">RELLIS</span>, <i>using its</i> <span style="font-size: 16px; font-weight: 600;">image to 3D assets</span> <i>cabilities.</i>
+            </p>
+            <p class="x-note">
+                <i>The appearance and geometry shown in this page are rendered from 3D Gaussians and meshes, respectively.
+                GLB files are extracted by baking appearance from 3D Gaussians to meshes.</i>
+            </p> -->
+
+            <div class="x-section-title"><div class="x-gradient-font">Pipeline Overview</div></div>
+            <div class="pipeline-video-container">
+                <video
+                  src="assets/videos/pipeline.mp4"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                ></video>
+            </div>
+
+            <div class="x-section-title"><div class="x-gradient-font">Layout Generation <span style="font-size: 40px; font-weight:600;">|</span> Interactive Demo</div></div>
+            <p>
+                Click on furniture items on the right to <b>add</b> them to the scene one by one.
+                Click again to <b>remove</b>.
+            </p>
+            <div id="ar-demo-container"></div>
+
+            <div class="x-section-title"><div class="x-gradient-font">Layout Generation <span style="font-size: 40px; font-weight:600;">|</span> Interactive Viewing</div></div>
+            <p>
+                Click on a scene card to open the interactive 3D viewer.
+                You can <b>rotate</b>, <b>pan</b>, and <b>zoom</b> the generated 3D layout using mouse or touch controls.
+            </p>
+            <div id="results-scene3d"></div>
+
+            <div class="x-section-title"><div class="x-gradient-font">Applications <span style="font-size: 40px; font-weight:600;">|</span> Layout Editing </div></div>
+            <div id="application-img">
+                <img src="assets/app/editing.png" alt="Layout editing." style="width: 100%;">
+            </div>
+
+            <div class="x-section-title"><div class="x-gradient-font">Methodology</div></div>
+            <p class="pipeline-img">
+                <img src="assets/pipeline.png" alt="Pipeline of the method" style="width: 100%;">
+            </p>
+            <p>
+            As shown in the figure above, <b><i>LaviGen</i></b> formulates 3D layout generation as an <b>autoregressive process</b>.
+            Conditioned on LLM-encoded instructions, at step <i>i</i> it takes the current scene state S<sub>i</sub> and the target object O<sub>i</sub>, and predicts the updated state S<sub>i+1</sub>.
+            To recover the object pose, we localize the newly generated region by computing the spatial difference between S<sub>i+1</sub> and S<sub>i</sub>, and then fit O<sub>i</sub> to obtain its <b>translation</b>, <b>rotation</b>, and <b>scale</b>.
+            </p>
+            
+            <p>
+            Concretely, at each step we encode the scene and the target object into latents, concatenate them with a noisy latent, and denoise the unified sequence with an <b>adapted 3D layout diffusion model</b> under instruction conditioning.
+            We further introduce an <b>identity-aware positional embedding</b> that augments RoPE with latent-source identity, explicitly separating scene context from the newly inserted object while preserving spatial alignment.
+            Finally, we apply <b>dual-guidance self-rollout distillation</b> to reduce exposure bias and accelerate inference, combining holistic scene-level supervision with step-wise object-aware guidance to obtain a robust few-step student for long-horizon generation.
+            </p>
+
+            <div class="x-section-title"><div class="x-gradient-font">Citation</div></div>
+            <p>
+                If you find our work useful, please consider citing:
+            </p>
+            <p class="bibtex x-gradient-block">
+<!-- @misc{dit360,
+    title={DiT360: High-Fidelity Panoramic Image Generation via Hybrid Training}, 
+    author={Haoran Feng and Dizhe Zhang and Xiangtai Li and Bo Du and Lu Qi},
+    year={2025},
+    eprint={2510.11712},
+    archivePrefix={arXiv},
+} -->
+            </p>
+            <!-- <div style="height: 100px;"> </div>
+            <p class="x-note">
+                <b style="line-height: 32px;">Responsible AI Considerations</b><br>
+                <i>
+                    TRELLIS is purely a research project. Responsible AI considerations were factored into all stages. The datasets used in this paper are public and have been reviewed to ensure there is no personally identifiable information or harmful content. However, as these datasets are sourced from the Internet, potential bias may still be present. Currently the model excels at generating artistic-style 3D assets and its capability in generating photorealistic real-world objects is limited.
+                </i>
+            </p>
+            <p class="x-note">
+                <b style="line-height: 32px;">Material Disclaimer</b><br>
+                <i>
+                The materials made available on this page are provided solely for academic and research purposes in connection with the exploration of text-to-3D and image-to-3D generation technologies, as described in the publication accessible at https://arxiv.org/abs/2412.01506. These materials are not intended for commercial exploitation or use.
+If you believe that any content on this page infringes upon your intellectual property rights, including but not limited to copyright, please notify us by submitting a takedown request via email to jiaoyan (at) microsoft.com.
+                </i>
+            </p> -->
+        </div>
+        <!-- <div id="bottombar">
+            <div class="row">
+                <div><span>T<span style="font-size: 10px;">RELLIS</span>:</span> Structured 3D Latents for Scalable and Versatile 3D Generation</div>
+                <div style="display: flex; flex-direction: row; gap: 8px;">
+                    <a href="https://github.com/microsoft/TRELLIS/issues">Contact Us on GitHub</a>
+                    <span style="width: 1px; background-color: rgba(255, 255, 255, 0.7);"></span>
+                    <a href="https://go.microsoft.com/fwlink/?LinkId=521839">Privacy & Cookies</a>
+                    <span style="width: 1px; background-color: rgba(255, 255, 255, 0.7);"></span>
+                    <a href="https://go.microsoft.com/fwlink/?linkid=2259814">Consumer Health Privacy</a>
+                    <span style="width: 1px; background-color: rgba(255, 255, 255, 0.7);"></span>
+                    <a href="https://go.microsoft.com/fwlink/?LinkID=246338">Terms of Use</a>
+                    <span style="width: 1px; background-color: rgba(255, 255, 255, 0.7);"></span>
+                    <a href="https://go.microsoft.com/fwlink/?linkid=2196228">Trademarks</a>
+                    <span style="width: 1px; background-color: rgba(255, 255, 255, 0.7);"></span>
+                    <span>© 2025 Microsoft</span>
+                </div>
+            </div>
+        </div> -->
+    <div id="imageModal" 
+            style="display:none; position:fixed; z-index:9999; top:0; left:0; width:100%; height:100%;
+                background:rgba(0,0,0,0.85); justify-content:center; align-items:center; cursor: zoom-out;">
+        <img id="modalImg" style="max-width:80%; max-height:75%; border-radius:12px; box-shadow:0 0 20px rgba(255,255,255,0.2);">
+        <div id="prevArrow" onclick="showPrevImage()"
+        style="position:absolute; left:3%; top:50%; transform:translateY(-50%);
+               color:white; font-size:64px; opacity:1; cursor:pointer; user-select:none; z-index:10000;">&#10094;</div>
+        <div id="nextArrow" onclick="showNextImage()"
+                style="position:absolute; right:3%; top:50%; transform:translateY(-50%);
+                    color:white; font-size:64px; opacity:1; cursor:pointer; user-select:none; z-index:10000;">&#10095;</div>
+   
+    </div>
+    
+    <script>
+
+        window.Scene3DVideoManager = (function () {
+        const MAX_CONCURRENT_LOADS = 4;   // 同时加载视频的数量上限（4~6 比较稳）
+        const MAX_CONCURRENT_PLAYS = 8;   // 同时播放的数量上限（太多会卡）
+        const SYNC_INTERVAL_MS = 1500;    // 同步校准频率
+        const RETRY_LIMIT = 2;
+
+        let loadQueue = [];
+        let loading = 0;
+        let playingSet = new Set();
+        let baseStartTs = null;
+        let io = null;
+        let syncTimer = null;
+
+        function nowSec() { return performance.now() / 1000; }
+
+        function enqueueLoad(video) {
+            if (!video || video.__queued) return;
+            if (video.__loaded) return;
+            video.__queued = true;
+            loadQueue.push(video);
+            pumpQueue();
+        }
+
+        function pumpQueue() {
+            while (loading < MAX_CONCURRENT_LOADS && loadQueue.length > 0) {
+            const v = loadQueue.shift();
+            if (!v || v.__loaded) continue;
+
+            loading++;
+            v.__queued = false;
+
+            // 赋 src 并 load
+            const src = v.getAttribute("data-src");
+            if (!src) { loading--; continue; }
+
+            // 如果之前失败过，强制重置
+            v.removeAttribute("src");
+            v.load();
+
+            v.src = src;
+            v.load();
+
+            const onReady = () => {
+                v.__loaded = true;
+                cleanup();
+                loading--;
+                pumpQueue();
+                tryPlay(v);
+            };
+
+            const onError = () => {
+                cleanup();
+                loading--;
+                v.__retry = (v.__retry || 0) + 1;
+                if (v.__retry <= RETRY_LIMIT) {
+                // 轻微延迟重试
+                setTimeout(() => enqueueLoad(v), 300 + 300 * v.__retry);
+                } else {
+                // 最终失败：保持 poster，不再折腾
+                v.__loaded = false;
+                }
+                pumpQueue();
+            };
+
+            function cleanup() {
+                v.removeEventListener("canplay", onReady);
+                v.removeEventListener("error", onError);
+            }
+
+            v.addEventListener("canplay", onReady, { once: true });
+            v.addEventListener("error", onError, { once: true });
+            }
+        }
+
+        function tryPlay(v) {
+            // 限制同时播放数量，避免设备/GPU 解码崩掉
+            if (playingSet.size >= MAX_CONCURRENT_PLAYS) return;
+            if (!v.__loaded) return;
+
+            // 设置统一“基准时间”，让可见视频尽量同步
+            if (baseStartTs == null) baseStartTs = nowSec();
+
+            // 目标播放时间 = (当前时间 - baseStartTs) 对 duration 取模
+            const dur = v.duration;
+            if (Number.isFinite(dur) && dur > 0) {
+            const t = (nowSec() - baseStartTs) % dur;
+            // 只在差异明显时调整，避免抖动
+            if (Math.abs(v.currentTime - t) > 0.25) {
+                try { v.currentTime = t; } catch (e) {}
+            }
+            }
+
+            const p = v.play();
+            if (p && typeof p.catch === "function") {
+            p.catch(() => {
+                // Autoplay 可能被策略阻止（尤其 iOS / 未静音等），这里不炸
+            });
+            }
+            playingSet.add(v);
+        }
+
+        function pauseAndUnload(v) {
+            if (!v) return;
+            try { v.pause(); } catch (e) {}
+            playingSet.delete(v);
+
+            // 不一定要卸载 src；如果你希望更省带宽/内存，可以启用下面这段
+            // v.removeAttribute("src");
+            // v.load();
+            // v.__loaded = false;
+        }
+
+        function onIntersection(entries) {
+            entries.forEach((entry) => {
+            const v = entry.target;
+            if (entry.isIntersecting) {
+                enqueueLoad(v);
+            } else {
+                pauseAndUnload(v);
+            }
+            });
+        }
+
+        function startSyncLoop() {
+            if (syncTimer) clearInterval(syncTimer);
+            syncTimer = setInterval(() => {
+            if (baseStartTs == null) return;
+            // 对当前在播的做轻微校准
+            playingSet.forEach((v) => {
+                if (!v.__loaded) return;
+                const dur = v.duration;
+                if (!Number.isFinite(dur) || dur <= 0) return;
+                const t = (nowSec() - baseStartTs) % dur;
+                if (Math.abs(v.currentTime - t) > 0.35) {
+                try { v.currentTime = t; } catch (e) {}
+                }
+            });
+            }, SYNC_INTERVAL_MS);
+        }
+
+        function init(root = document) {
+            const videos = Array.from(root.querySelectorAll("video.scene3d-video"));
+            if (videos.length === 0) return;
+
+            // IntersectionObserver：可见才加载/播放
+            if (io) io.disconnect();
+            io = new IntersectionObserver(onIntersection, {
+            root: null,
+            threshold: 0.25,
+            rootMargin: "200px", // 提前 200px 预加载
+            });
+
+            videos.forEach((v) => {
+            // 确保静音 & inline（移动端 autoplay 必要条件）
+            v.muted = true;
+            v.playsInline = true;
+            io.observe(v);
+            });
+
+            startSyncLoop();
+            pumpQueue();
+        }
+
+        function resetSync() {
+            baseStartTs = null;
+            // 重新同步：下一批播放会以新的基准为准
+        }
+
+        return { init, resetSync };
+        })();
+
+        let modalIndex = -1;
+        let modalItems = []; 
+
+        function showImageModal(src, alt) {
+            const modal = document.getElementById("imageModal");
+            const modalImg = document.getElementById("modalImg");
+            modal.style.display = "flex";
+            modalImg.src = src;
+            modalImg.alt = alt || '';
+            updateArrowsVisibility();
+        }
+
+        function showImageModalFromCarousel(carousel_id, item_idx) {
+            const carousel = carousel_objects[carousel_id];
+            if (!carousel) return;
+            modalItems = carousel.items.map(it => {
+                let base = '';
+                if (carousel_id.includes('txt2pano_in')) base = 'assets/txt2pano_in/';
+                else if (carousel_id.includes('txt2pano_out')) base = 'assets/txt2pano_out/';
+                return { src: base + it.image, alt: it.prompt || '' };
+            });
+            modalIndex = Math.max(0, Math.min(item_idx, modalItems.length - 1));
+            showImageModal(modalItems[modalIndex].src, modalItems[modalIndex].alt);
+        }
+
+        function showNextImage() {
+            if (!modalItems || modalItems.length === 0) return;
+            modalIndex = (modalIndex + 1) % modalItems.length;
+            const img = modalItems[modalIndex];
+            showImageModal(img.src, img.alt);
+        }
+
+        function showPrevImage() {
+            if (!modalItems || modalItems.length === 0) return;
+            modalIndex = (modalIndex - 1 + modalItems.length) % modalItems.length;
+            const img = modalItems[modalIndex];
+            showImageModal(img.src, img.alt);
+        }
+
+        document.getElementById("imageModal").addEventListener("click", (e) => {
+            if (e.target.id === "imageModal") document.getElementById("imageModal").style.display = "none";
+        });
+
+        document.addEventListener("keydown", (e) => {
+            const modal = document.getElementById("imageModal");
+            if (modal.style.display !== "flex") return;
+            if (e.key === "Escape") modal.style.display = "none";
+            else if (e.key === "ArrowRight") showNextImage();
+            else if (e.key === "ArrowLeft") showPrevImage();
+        });
+
+        function updateArrowsVisibility() {
+            const prev = document.getElementById('prevArrow');
+            const next = document.getElementById('nextArrow');
+            if (!prev || !next) return;
+            if (modalItems.length <= 1) { prev.style.display = 'none'; next.style.display = 'none'; }
+            else { prev.style.display = 'block'; next.style.display = 'block'; }
+        }
+    </script>
+    </body>
+</html>
